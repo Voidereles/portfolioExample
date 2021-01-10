@@ -1,0 +1,32 @@
+{
+  "name": "portfolioExample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voidereles/portfolioExample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Voidereles/portfolioExample/issues"
+  },
+  "homepage": "https://github.com/Voidereles/portfolioExample#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "fsevents": "^2.3.1",
+    "fullpage.js": "^3.0.9",
+    "jquery": "^3.5.1",
+    "owl-carousel": "^1.0.0",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "sass": "^1.32.2"
+  }
+}
