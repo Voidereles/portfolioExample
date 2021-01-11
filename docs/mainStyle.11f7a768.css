@@ -344,12 +344,28 @@ body {
   animation: hr 1.3s 1.4s cubic-bezier(0.76, 0.01, 0.21, 1.02) forwards;
 }
 .welcome__logo {
-  max-width: 90%;
+  max-width: 100%;
   width: 500px;
   height: 100%;
 }
 .welcome__logo-container {
   margin-bottom: 30px;
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+}
+.welcome__logo-bar-helper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: black;
+  background: linear-gradient(45deg, #ccdee0 0%, #bbe6fb 100%);
+  z-index: 5;
+  width: 500px;
+  height: 100px;
+  transform-origin: left;
+  transform: translateX(-14px) scaleX(2);
+  animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards, hueRotate 36s infinite alternate-reverse cubic-bezier(0.91, 0.11, 0.19, 0.92);
 }
 .welcome__logo-arkne path, .welcome__logo-group path {
   fill: white;
@@ -366,8 +382,7 @@ body {
   left: 0;
   transform-origin: left;
   transform: translateX(-14px) scaleX(2);
-  animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards, hueRotate 36s infinite alternate-reverse cubic-bezier(0.91, 0.11, 0.19, 0.92);
-  fill: white;
+  fill: transparent;
 }
 .welcome__heading {
   color: white;

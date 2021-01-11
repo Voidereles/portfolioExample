@@ -57,13 +57,30 @@
     }
 
     &__logo {
-        max-width: 90%;
+        max-width: 100%;
         width: 500px;
         height: 100%;
 
         &-container {
             margin-bottom: 30px;
+            position: relative;
+            display: inline-flex;
+            overflow: hidden;
+        }
 
+        &-bar-helper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: black;
+            // background: linear-gradient(45deg, #0f4c81 35%, white 100%);
+            background: linear-gradient(45deg, hsla(186, 25%, 84%, 1) 0%, hsl(200, 90%, 86%) 100%);
+            z-index: 5;
+            width: 500px;
+            height: 100px;
+            transform-origin: left;
+            transform: translateX(-14px) scaleX(2);
+            animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards, hueRotate 36s infinite alternate-reverse cubic-bezier(0.91, 0.11, 0.19, 0.92);
         }
 
         &-arkne,
@@ -87,9 +104,9 @@
             left: 0;
             transform-origin: left;
             transform: translateX(-14px) scaleX(2);
-            animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards, hueRotate 36s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
+            // animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards, hueRotate 36s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
 
-            fill: white;
+            fill: transparent;
 
         }
     }
