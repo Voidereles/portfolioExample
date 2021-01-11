@@ -1,0 +1,200 @@
+/* CSS HSL */
+/* SCSS HSL */
+/* SCSS Gradient */
+@font-face {
+  font-family: 'Hurme';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/HurmeGeometricSans2-Bold.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/HurmeGeometricSans2-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avantGarde';
+  src: url("../assets/fonts/ITCAvantGardeGothicMedium.otf");
+}
+
+body {
+  color: #373838;
+  font-family: sans-serif;
+}
+
+.container-fluid {
+  max-width: 1700px;
+}
+
+@-webkit-keyframes logoBar {
+  from {
+    -webkit-transform: translateX(-14px) scaleX(2);
+            transform: translateX(-14px) scaleX(2);
+  }
+  to {
+    -webkit-transform: translateX(0) scaleX(1);
+            transform: translateX(0) scaleX(1);
+  }
+}
+
+@keyframes logoBar {
+  from {
+    -webkit-transform: translateX(-14px) scaleX(2);
+            transform: translateX(-14px) scaleX(2);
+  }
+  to {
+    -webkit-transform: translateX(0) scaleX(1);
+            transform: translateX(0) scaleX(1);
+  }
+}
+
+@-webkit-keyframes logoGroup {
+  from {
+    -webkit-transform: matrix(1.5184, 0, 0, 1.5184, -50.064, -12.644);
+            transform: matrix(1.5184, 0, 0, 1.5184, -50.064, -12.644);
+  }
+  to {
+    transforM: matrix(1.5184, 0, 0, 1.5184, -20.064, -12.644);
+  }
+}
+
+@keyframes logoGroup {
+  from {
+    -webkit-transform: matrix(1.5184, 0, 0, 1.5184, -50.064, -12.644);
+            transform: matrix(1.5184, 0, 0, 1.5184, -50.064, -12.644);
+  }
+  to {
+    transforM: matrix(1.5184, 0, 0, 1.5184, -20.064, -12.644);
+  }
+}
+
+@-webkit-keyframes sliderIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sliderIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+
+@keyframes fadeInVid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes hr {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+@keyframes hr {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+@-webkit-keyframes hrOut {
+  from {
+    width: 70px;
+  }
+  to {
+    width: 0px;
+  }
+}
+
+@keyframes hrOut {
+  from {
+    width: 70px;
+  }
+  to {
+    width: 0px;
+  }
+}
+
+@-webkit-keyframes spark {
+  from {
+    -webkit-clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+            clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes spark {
+  from {
+    -webkit-clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+            clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+/*# sourceMappingURL=predefinied.css.map */
