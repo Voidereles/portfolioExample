@@ -308,7 +308,7 @@ body {
 }
 .welcome::before {
   content: "";
-  background: linear-gradient(45deg, #0f4c81 30%, white);
+  background: linear-gradient(45deg, #0f4c81 35%, white 100%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -379,6 +379,7 @@ body {
   margin-bottom: 30px;
   -webkit-animation: fade 1s 1.9s forwards;
   animation: fade 1s 1.9s forwards;
+  text-shadow: 0 1px 1px rgba(76, 76, 77, 0.72);
 }
 .welcome__mail:hover, .welcome__mail:active {
   display: inline-block;
@@ -388,6 +389,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.welcome__contact {
+  text-shadow: 0 1px 1px rgba(76, 76, 77, 0.72);
+}
 .welcome__text-gradient, .welcome__mail {
   display: inline-block;
   background: linear-gradient(45deg, #ccdee0 0%, #bbe6fb 100%);
@@ -395,6 +399,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: none;
 }
 .welcome__arrow {
   animation: fade 1.3s 2.7s cubic-bezier(0.76, 0.01, 0.21, 1.02) forwards;
