@@ -102,6 +102,29 @@
         animation: fade 1s 1.9s forwards;
     }
 
+    &__mail {
+
+        &:hover,
+        &:active {
+            display: inline-block;
+            background: linear-gradient(45deg, hsla(186, 25%, 84%, 1) 0%, hsl(200deg 90% 86%) 100%);
+            background: -webkit-linear-gradient(45deg, hsla(186, 25%, 84%, 1) 0%, hsl(200deg 90% 86%) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__text-gradient,
+    &__mail {
+        display: inline-block;
+        background: linear-gradient(45deg, hsla(186, 25%, 84%, 1) 0%, hsl(200deg 90% 86%) 100%);
+        background: -webkit-linear-gradient(45deg, hsla(186, 25%, 84%, 1) 0%, hsl(200deg 90% 86%) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     &__arrow {
         animation: fade 1.3s 2.7s cubic-bezier(0.76, 0.01, 0.21, 1.02) forwards;
         transition: $durationM ease;
@@ -120,5 +143,11 @@
 
     to {
         filter: hue-rotate(-180deg);
+    }
+}
+
+@media (max-width:992px) {
+    .welcome__container {
+        padding: 42px;
     }
 }
