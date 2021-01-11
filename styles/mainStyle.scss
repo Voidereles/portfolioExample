@@ -136,6 +136,7 @@ body {
     }
 
     &__mail {
+        text-decoration: none;
 
         &:hover,
         &:active {
@@ -145,7 +146,7 @@ body {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-
+            text-decoration: none;
             animation: hueRotate 36s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
         }
     }
