@@ -21715,8 +21715,8 @@ require("./scripts/owlScripts.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// document.getElementById('#welcomeVideo').playbackRate = 0.5;
-document.querySelector('.welcome video').playbackRate = 0.8; // document.getElementById('#welcomeVideo').play();
+document.getElementById('#welcomeVideo').playbackRate = 0.7; // document.querySelector('.welcome video').playbackRate = 1;
+// document.getElementById('#welcomeVideo').play();
 },{"jquery":"node_modules/jquery/dist/jquery.js","owl.carousel":"node_modules/owl.carousel/dist/owl.carousel.js","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","./scripts/owlScripts.js":"scripts/owlScripts.js"}],"../../../../../../../../usr/local/share/.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -21745,7 +21745,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46641" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33845" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

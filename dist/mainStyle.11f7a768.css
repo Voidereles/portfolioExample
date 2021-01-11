@@ -381,6 +381,12 @@ body {
   animation: fade 1s 1.9s forwards;
   text-shadow: 0 1px 1px rgba(76, 76, 77, 0.72);
 }
+.welcome__contact {
+  opacity: 0;
+  animation: fade 1s 1.9s forwards;
+  -webkit-animation: fade 1s 2.9s forwards;
+  text-shadow: 0 1px 1px rgba(76, 76, 77, 0.72);
+}
 .welcome__mail:hover, .welcome__mail:active {
   display: inline-block;
   background: linear-gradient(45deg, #ccdee0 0%, #bbe6fb 100%);
@@ -388,9 +394,6 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.welcome__contact {
-  text-shadow: 0 1px 1px rgba(76, 76, 77, 0.72);
 }
 .welcome__text-gradient, .welcome__mail {
   display: inline-block;

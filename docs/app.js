@@ -18,6 +18,6 @@ var t,e=arguments[3];!function(e,n){"object"==typeof exports&&"undefined"!=typeo
 },{"jquery":"HlZQ","popper.js":"v5IM"}],"i1JL":[function(require,module,exports) {
 
 },{}],"A2T1":[function(require,module,exports) {
-"use strict";var e=r(require("jquery"));function r(e){return e&&e.__esModule?e:{default:e}}require("owl.carousel"),require("bootstrap"),require("./scripts/owlScripts.js"),document.querySelector(".welcome video").playbackRate=.8;
+"use strict";var e=r(require("jquery"));function r(e){return e&&e.__esModule?e:{default:e}}require("owl.carousel"),require("bootstrap"),require("./scripts/owlScripts.js"),document.getElementById("#welcomeVideo").playbackRate=.7;
 },{"jquery":"HlZQ","owl.carousel":"SoV9","bootstrap":"pe4o","./scripts/owlScripts.js":"i1JL"}]},{},["A2T1"], null)
 //# sourceMappingURL=app.js.map

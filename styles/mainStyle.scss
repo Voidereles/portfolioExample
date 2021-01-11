@@ -103,6 +103,13 @@
         text-shadow: 0 1px 1px hsl(235deg 1% 30% / 72%);
     }
 
+    &__contact {
+        opacity: 0;
+        animation: fade 1s 1.9s forwards;
+        -webkit-animation: fade 1s 2.9s forwards;
+        text-shadow: 0 1px 1px hsl(235deg 1% 30% / 72%);
+    }
+
     &__mail {
 
         &:hover,
@@ -116,9 +123,6 @@
         }
     }
 
-    &__contact {
-        text-shadow: 0 1px 1px hsl(235deg 1% 30% / 72%);
-    }
 
     &__text-gradient,
     &__mail {
