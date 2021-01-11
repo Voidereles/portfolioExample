@@ -2,6 +2,10 @@
 @import 'predefinied.scss';
 
 
+body {
+    padding: 0;
+    margin: 0;
+}
 
 
 .welcome {
@@ -9,10 +13,25 @@
     width: 100%;
     height: 100vh;
 
+    &::before {
+        content: '';
+        background: linear-gradient(45deg, #0f4c81 35%, white 100%);
+        animation: hueRotate 36s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
     &__video {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        // filter: hue-rotate(20deg);
+        // animation: hueRotate 1s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
         position: absolute;
         top: 0;
         left: 0;
