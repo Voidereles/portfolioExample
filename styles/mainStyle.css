@@ -213,6 +213,7 @@ body {
 .welcome::before {
   content: '';
   background: linear-gradient(45deg, #0f4c81 35%, white 100%);
+  animation: hueRotate 36s infinite alternate-reverse cubic-bezier(0.91, 0.11, 0.19, 0.92);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -227,8 +228,6 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: hue-rotate(20deg);
-          filter: hue-rotate(20deg);
   position: absolute;
   top: 0;
   left: 0;
@@ -284,8 +283,8 @@ body {
           transform-origin: left;
   -webkit-transform: translateX(-14px) scaleX(2);
           transform: translateX(-14px) scaleX(2);
-  -webkit-animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards;
-          animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards;
+  animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards, hueRotate 36s infinite alternate-reverse cubic-bezier(0.91, 0.11, 0.19, 0.92);
+  fill: white;
 }
 
 .welcome__heading {
@@ -315,6 +314,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: hueRotate 36s infinite alternate-reverse cubic-bezier(0.91, 0.11, 0.19, 0.92);
 }
 
 .welcome__text-gradient, .welcome__mail {
@@ -325,6 +325,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: none;
+  animation: hueRotate 36s infinite alternate-reverse cubic-bezier(0.91, 0.11, 0.19, 0.92);
 }
 
 .welcome__arrow {
@@ -342,23 +343,23 @@ body {
 
 @-webkit-keyframes hueRotate {
   from {
-    -webkit-filter: hue-rotate(20deg);
-            filter: hue-rotate(20deg);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   to {
-    -webkit-filter: hue-rotate(-180deg);
-            filter: hue-rotate(-180deg);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }
 
 @keyframes hueRotate {
   from {
-    -webkit-filter: hue-rotate(20deg);
-            filter: hue-rotate(20deg);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   to {
-    -webkit-filter: hue-rotate(-180deg);
-            filter: hue-rotate(-180deg);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }
 

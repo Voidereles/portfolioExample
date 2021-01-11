@@ -15,6 +15,7 @@
     &::before {
         content: '';
         background: linear-gradient(45deg, #0f4c81 35%, white 100%);
+        animation: hueRotate 36s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -28,7 +29,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: hue-rotate(20deg);
+        // filter: hue-rotate(20deg);
         // animation: hueRotate 1s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
         position: absolute;
         top: 0;
@@ -86,7 +87,10 @@
             left: 0;
             transform-origin: left;
             transform: translateX(-14px) scaleX(2);
-            animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards;
+            animation: logoBar 1.3s 0.4s cubic-bezier(0.76, 0.01, 0.21, 1) forwards, hueRotate 36s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
+
+            fill: white;
+
         }
     }
 
@@ -120,6 +124,8 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            animation: hueRotate 36s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
         }
     }
 
@@ -133,6 +139,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: none;
+        animation: hueRotate 36s infinite alternate-reverse cubic-bezier(.91, .11, .19, .92);
     }
 
     &__arrow {
@@ -148,11 +155,11 @@
 
 @keyframes hueRotate {
     from {
-        filter: hue-rotate(20deg);
+        filter: hue-rotate(0deg);
     }
 
     to {
-        filter: hue-rotate(-180deg);
+        filter: hue-rotate(360deg);
     }
 }
 
