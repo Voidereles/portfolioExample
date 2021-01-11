@@ -423,5 +423,10 @@ body {
     padding: 42px;
   }
 }
+@media (min-width: 1600px) {
+  .welcome__container {
+    padding: 128px;
+  }
+}
 
 /*# sourceMappingURL=mainStyle.11f7a768.css.map */
