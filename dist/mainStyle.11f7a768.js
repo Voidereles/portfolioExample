@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\assets\\fonts\\ITCAvantGardeGothicMedium.otf":[["ITCAvantGardeGothicMedium.9d7418ac.otf","assets/fonts/ITCAvantGardeGothicMedium.otf"],"assets/fonts/ITCAvantGardeGothicMedium.otf"],"_css_loader":"../../../../AppData/Roaming/npm-cache/_npx/3048/node_modules/parcel/src/builtins/css-loader.js"}],"../../../../AppData/Roaming/npm-cache/_npx/3048/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\assets\\fonts\\ITCAvantGardeGothicMedium.otf":[["ITCAvantGardeGothicMedium.9d7418ac.otf","assets/fonts/ITCAvantGardeGothicMedium.otf"],"assets/fonts/ITCAvantGardeGothicMedium.otf"],"_css_loader":"../../../../AppData/Roaming/npm-cache/_npx/3048/node_modules/parcel/src/builtins/css-loader.js"}],"../../../../AppData/Roaming/npm-cache/_npx/1824/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64340" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49357" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm-cache/_npx/3048/node_modules/parcel/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../../AppData/Roaming/npm-cache/_npx/1824/node_modules/parcel/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/mainStyle.11f7a768.js.map
